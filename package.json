@@ -5,7 +5,7 @@
   "description": "Build a grid of product items and ads",
   "main": "server/index.js",
   "scripts": {
-    "start": "webpack --mode development && json-server server/index.js --routes server/routes.json --middlewares server/handle-delay.js server/handle-ads.js",
+    "start": "json-server server/index.js --routes server/routes.json --middlewares server/handle-delay.js server/handle-ads.js",
     "build": "webpack --mode production && json-server server/index.js --routes server/routes.json --middlewares server/handle-delay.js server/handle-ads.js"
   },
   "author": "Abhilash Thakur",
